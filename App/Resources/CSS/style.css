@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #25b99a;
+
+  /*Round the Header */
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+header input{
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #fff; /*Turns the Input Text White */
+  background: rgba(255, 255, 255, 0.2);
+
+  /*Round the Header */
+  border-top-left-radius: : 5px;
+  border-bottom-left-radius: : 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/*Doesn't seem to work 9:40 */
+header input::webkit-input-placeholder{
+  color:rgba(255, 255, 255, 0.75);
+}
