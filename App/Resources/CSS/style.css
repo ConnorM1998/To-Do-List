@@ -3,7 +3,10 @@
 /* Google Font Embed */
 body, input, button {
   font-family: 'Roboto', sans-serif;
+}
 
+body {
+  background: #edf0f1 /* Off-grey background */
 }
 
 header{
