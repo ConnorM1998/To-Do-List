@@ -79,6 +79,7 @@ header button {
   border: 0px;
   box-shadow: 0;
   outline: none;
+  cursor: pointer;
 
   -webkit-appearance: none;
   -moz-appearance: none;
