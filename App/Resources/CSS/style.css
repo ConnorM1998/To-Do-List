@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/* Google Font Embed */
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+
+}
+
 header{
   width: 100%;
   height: 80px;
@@ -21,7 +27,11 @@ header input{
   height: 50px;
   float: left;
   color: #fff; /*Turns the Input Text White */
+  font-size: 15px;
+  font-weight: 400;
   background: rgba(255, 255, 255, 0.2);
+  text-indent: 20px;
+  padding: 0 60px 0 0; /* Makes sure text doesnt overlap Button */
 
   /*Round the Header */
   border-top-left-radius: : 5px;
@@ -41,6 +51,52 @@ header input{
 }
 
 /*Doesn't seem to work 9:40 */
-header input::webkit-input-placeholder{
-  color:rgba(255, 255, 255, 0.75);
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:15px;
+  right: 15px;
+  z-index: 2;
+  border-radius: 25px;
+  background: #fff;
+  border: 0px;
+  box-shadow: 0;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* ADD SYMBOL on HEADER */
+header button svg {
+  width: 16px;
+  height 16px;
+  position: absolute;
+  top: 50%
+  left: 50%;
+  margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+  fill: #25b99a;
 }
